@@ -1,3 +1,8 @@
+/** 
+ *	@author Nic Mays 
+ *	@version problem 4.20
+ */
+
 import java.util.Scanner;
 public class prob4_20
 {

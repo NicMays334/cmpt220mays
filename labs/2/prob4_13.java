@@ -1,3 +1,8 @@
+/** 
+ *	@author Nic Mays 
+ *	@version problem 4.13
+ */
+
 import java.util.Scanner;
 import java.util.Arrays;
 public class prob4_13 
@@ -18,18 +23,7 @@ public class prob4_13
 		
 		else
 			System.out.println("consonant.");
+		
 		reader.close();	
 	}
 }
-
-
-
-
-
-
-
-
-
-/*////////////char ch = 'E';
-		String hex = String.format("%04x", (int) ch);
-		System.out.println(hex);*/

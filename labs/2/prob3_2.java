@@ -1,3 +1,8 @@
+/** 
+ *	@author Nic Mays 
+ *	@version problem 3.2
+ */
+
 import java.util.Scanner;
 public class prob3_2 
 {
@@ -14,7 +19,6 @@ public class prob3_2
 		
 		System.out.println(n1 + " + " + n2 + " + " + n3 + " = " + (n1+n2+n3) 
 				+ " is "+(n1+n2+n3==answer));
-		
-		
+		reader.close();
 	}
 }
