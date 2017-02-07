@@ -1,28 +1,23 @@
+/**
+ *	@author Nic Mays
+ *	@version problem 5.5
+ */
 
-public class prob5_5 {
-
+public class prob5_5 
+{
 	public static void main(String[] args) 
 	{
-		final float KILO = (float) 2.20462;
-		System.out.println("Kilograms    Pounds  |  Pounds    Kilograms");
-		int kilograms = 1;
-		int pounds = 20;
-		while(pounds<516)
-		{
-			System.out.print(kilograms+"    ");
-			System.out.printf("%.1f",kilograms*KILO);
+		final double KILO = 2.2;
+
+		System.out.println("Kilograms    Pounds     |     Pounds      Kilograms");
+		
+		for (int k = 1, p = 20; k <= 199 && p <= 515; k += 2, p += 5) {
+			//format
+			System.out.printf("%-12d%7.1f", k, (k * KILO));
 			
-			System.out.print("  |  ");
-			System.out.print(pounds+"    ");
-			System.out.printf("%.2f",pounds/KILO);
-			System.out.println();
+			System.out.print("     |     ");
 			
-			
-			
-			
-			kilograms+=2;
-			pounds+=5;
+			System.out.printf("%-9d%12.2f\n", p, (p / KILO));
 		}
 	}
-
 }
