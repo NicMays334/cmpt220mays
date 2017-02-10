@@ -29,6 +29,7 @@ public class prob6_3
 		
 		if(isPalindrome(n))
 			System.out.println(n+" is a palindrome");
+		// JA: You should also print a message when it's not.
 		
 		reader.close();
 	}
