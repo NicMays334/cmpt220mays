@@ -1,64 +1,57 @@
 /**
- *	@author Nic Mays
+ * 	@author Nic Mays	
  *	@version problem 7.4
  */
 
 import java.util.Scanner;
 public class prob7_4 
 {
-	public static double computeAverage(double[] Array, int usedLength)
+	public static double computeAverage(double[] array, int arraySize)
 	{
 		double sum = 0;
-		for(int i=0; i<usedLength; i++)
-			sum+=Array[i];
+		for(int i=0; i<arraySize; i++)
+			sum+=array[i];
 		
-		System.out.println(sum);
-		
-		sum = sum/ (float) (usedLength-1);
-		return(sum);
+		return(sum/arraySize);
 	}
 	
 	public static void main(String[] args) 
 	{
-		double[] Array = new double[100];
+		
 		Scanner reader = new Scanner(System.in);
+		double array[] = new double[100];
+		double average = 0;
+		int arraySize = 0;
+		int greaterCount = 0;
+		int lesserCount = 0;
 		boolean exit = false;
-		int pivot=0; //size of used array
-		double average;
-		int greaterCount=0;
-		int lesserCount=0;
 		
-		for(; pivot<100 && !exit; pivot++)
+		for(int i=0; i<100&&!exit; i++)
 		{
-			System.out.print("Enter Score #" + (pivot+1) + ": ");
-			Array[pivot]=reader.nextDouble();
+			System.out.print("Enter score #"+(i+1)+": ");
+			array[i]=reader.nextDouble();
 			
-			if(Array[pivot]<0)
+			if(array[i]<0)
 				exit=true;
-			
+				arraySize=i;
 		}
-		pivot--;
-		average=computeAverage(Array, pivot);
 		
-		for(int i=0; i<pivot; i++)
+		average = computeAverage(array, arraySize);
+		
+		for(int i=0; i<arraySize; i++)
 		{
-			if(Array[i]>=average)
+			if(array[i]>=average)
 				greaterCount++;
-			
-			else if(Array[i]<average)
+			else if(array[i]<average)
 				lesserCount++;
 		}
 		
-			System.out.println("\nResults: ");
-			System.out.println("=========================");
-			System.out.println("# of Scores: " + (pivot-1));
-			System.out.println("Average Score: " + average);
-			System.out.println("# of Scores >= Average: " + greaterCount);
-			System.out.println("# of Scores < Average: " + lesserCount);
-			
-			
-		}
+		System.out.println("\nResults");
+		System.out.println("==========");
+		System.out.print("Average:        "+average);
+		System.out.println("# of Scores >=: "+greaterCount);
+		System.out.println("# of Scores <:  "+lesserCount);
 		
-		
+		reader.close();
 	}
-
+}
