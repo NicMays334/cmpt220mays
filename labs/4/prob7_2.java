@@ -18,6 +18,8 @@ public class prob7_2 {
 			x=reader.nextInt();
 			
 			s.append(Integer.toString(x)+" "); //builds string
+			// JA: If you uyse a string to reverse the numbers, the numbers themselves 
+			// JA: will be reversed
 		}
 		
 		System.out.println("\nReverse Order:"+s.reverse());

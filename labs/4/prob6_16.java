@@ -15,7 +15,7 @@ public class prob6_16
 	{
 		System.out.println("Year  | Days");
 		System.out.println("-------------");
-		for(int i=2000; i<2020; i++)
+		for(int i=2000; i<2020; i++) // JA: You missed the last year <= 2020
 			System.out.println(i+"  |  "+numberOfDaysInAYear(i));
 	}
 
