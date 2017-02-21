@@ -32,6 +32,7 @@ public class prob7_19
 			System.out.println("sorted");
 		else
 			System.out.println("not sorted");
+		
+		reader.close();
 	}
-
 }

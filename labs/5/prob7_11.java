@@ -40,5 +40,6 @@ public class prob7_11
 		
 		System.out.printf("\n%s %.2f\n", "The mean is ", mean(array));
 		System.out.printf("%s %.5f", "The standard deviation is ", deviation(array));
+		reader.close();
 	}
 }
