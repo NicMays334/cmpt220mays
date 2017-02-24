@@ -3,12 +3,13 @@
  *	@version problem 8.7
  */
 
+// JA: Always add comments to your code
 public class prob8_7
 {
 	public static double dist(
 			double x1, double y1, double z1, double x2, double y2, double z2) 
 	{
-			return Math.sqrt(Math.pow(x2 - x1, 2) +  Math.pow(y2 - y1, 2) + Math.pow(y2 - y1, 2));
+			return Math.sqrt(Math.pow(x2 - x1, 2) +  Math.pow(y2 - y1, 2) + Math.pow(y2 - y1, 2)); // JA: Last term is z, not y
 	}
 	
 	public static void main(String[] args)

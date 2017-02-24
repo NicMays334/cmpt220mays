@@ -3,6 +3,7 @@
  *	@version problem 7.14
  */
 
+// JA: Always add comments to your code
 import java.util.Scanner;
 public class prob7_14
 {
@@ -14,9 +15,9 @@ public class prob7_14
 		
 		for(int i=0; i<numbers.length; i++)
 			if(numbers[min]>numbers[i])
-				min=i;
+				min=i; // JA: This should be the value, not the index
 		
-		for (int i = 2; i < min ; i++) 
+		for (int i = 2; i < min ; i++) // JA: You have to include min (<=)
 		{
 			divisor = true;
 			
