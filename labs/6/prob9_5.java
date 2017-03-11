@@ -21,10 +21,13 @@ public class prob9_5
 		//Sees date after x amount of time has past since 1/1/1970
 		date.setTimeInMillis(1234567898765L);
 		System.out.println("\nTime Lapse Test: ");
-		System.out.print(date.YEAR);
+//		System.out.print(date.YEAR);
+		System.out.print(date.get(GregorianCalendar.YEAR));
 		System.out.print(" / ");
-		System.out.print(date.MONTH);
+//		System.out.print(date.MONTH);
+		System.out.print(date.get(GregorianCalendar.MONTH));
 		System.out.print(" / ");
-		System.out.println(date.DAY_OF_MONTH);
+//		System.out.println(date.DAY_OF_MONTH);
+		System.out.println(date.get(GregorianCalendar.DAY_OF_MONTH));
 	}
 }
