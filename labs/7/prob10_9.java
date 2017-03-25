@@ -48,8 +48,8 @@ class Course
 	//does an iterative search for the student and then zeroes their name out
 	public void dropStudent(String student) 
 	{
-		for(int i=0; i<this.students.length; i++)
-			if(this.students.equals(student))
+		for(int i=0; i<numberOfStudents; i++) // JA
+			if(this.students[i].equals(student)) // JA: There is a problem here
 			{
 				this.students[i]="";
 				this.numberOfStudents--;
