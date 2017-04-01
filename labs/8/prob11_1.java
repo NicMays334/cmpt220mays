@@ -103,7 +103,7 @@ class Triangle extends GeometricObject
 	@Override
 	public double getArea()
 	{
-		double s = this.side1+this.side2+this.side3;
+		double s = (this.side1+this.side2+this.side3)/2; // JA
 		double area = s*(s-side1)*(s-side2)*(s-side3);
 		
 		return(Math.sqrt(area));
