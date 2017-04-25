@@ -3,7 +3,6 @@ package folsom;
 /**
  * 	@author Nic Mays	
  *	@version 1.0
- *	TODO Picture, GUI
  */
 public class TextEncryptor 
 {

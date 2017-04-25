@@ -19,7 +19,6 @@ public class Engine
 		choice = reader.nextByte();
 		double start;
 		double finish;
-		// M8pm1K60AX
 		switch(choice)
 		{
 			case 1:
